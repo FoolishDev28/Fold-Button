@@ -1,0 +1,36 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	background: #1c2a44;
+}
+button{
+	position: relative;
+	font-size: 18px;
+	padding: 1.0rem 1.9rem;
+	background: red;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 4px 8px skyblue ;
+	cursor: pointer;
+}
+button::before{
+	position: absolute;
+	content: "";
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	background: black;
+	border-radius:0px 0px 5px 0px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	transition: 0.3s;
+}
+button:hover::before{
+	width: 26px;
+	height: 26px;
+}
